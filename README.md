@@ -1,5 +1,7 @@
 # MailAssertions
 
+[![codecov](https://codecov.io/gh/hult/mail_assertions/branch/master/graph/badge.svg)](https://codecov.io/gh/hult/mail_assertions)
+
 This gem provides two new minitest assertions, `assert_mail` and
 `refute_mail` for easily testing whether a specific email has been
 sent by your application.
