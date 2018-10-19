@@ -32,6 +32,10 @@ class MailAssertionsTest < Minitest::Test
     assert_mail subject: 'Subject'
   end
 
+  def test_assert_mail_also_accepts_regexps
+    assert_mail subject: /^Subj/
+  end
+
   def test_assert_mail_fails_if_zero_emails_match
     assert_raises Minitest::Assertion do
       assert_mail subject: 'Wrong subject'
